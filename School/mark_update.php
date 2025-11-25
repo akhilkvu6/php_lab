@@ -18,6 +18,10 @@ if (isset($_POST['update']))
 
     mysqli_query($conn, "UPDATE students SET science='$s', maths='$m', english='$e', total='$t' WHERE rollno='$roll'");
     echo "Marks Updated";
+    #$res = "UPDATE students SET science='$s', maths='$m', english='$e', total='$t' WHERE rollno='$roll'";
+    #mysqli_query($conn, $res);
+    #echo "Updated";
+
 }
 ?>
 <html>
